@@ -2,9 +2,15 @@
 
     namespace STDW\Contract;
 
+    use STDW\Container\Contract\ContainerInterface;
+    use STDW\Container\Contract\ContainerUtilsTrait;
 
-    abstract class AppAbstracted implements AppInterface
+
+    abstract class AppAbstracted implements AppInterface, ContainerInterface
     {
+        use ContainerUtilsTrait;
+
+
         public static AppAbstracted $instance;
 
 

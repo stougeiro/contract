@@ -5,10 +5,10 @@
 
     abstract class ModuleProviderAbstracted implements ModuleProviderInterface
     {
-        protected AppInterface $app;
+        protected AppAbstracted $app;
 
 
-        public function __construct(AppInterface $app)
+        public function __construct(AppAbstracted $app)
         {
             $this->app = $app;
         }

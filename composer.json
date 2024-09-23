@@ -11,7 +11,10 @@
     "autoload": {
         "psr-4": {
             "STDW\\Contract\\": "src/"
-        }
+        },
+        "files": [
+            "src/functions.php"
+        ]
     },
     "minimum-stability": "dev",
     "require": {

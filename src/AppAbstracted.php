@@ -3,12 +3,12 @@
     namespace STDW\Contract;
 
 
-    abstract class App implements AppInterface
+    abstract class AppAbstracted implements AppInterface
     {
-        public static App $instance;
+        public static AppAbstracted $instance;
 
 
-        public static function getInstance(): App
+        public static function getInstance(): AppAbstracted
         {
             return static::$instance;
         }

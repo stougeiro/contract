@@ -1,12 +1,12 @@
 <?php declare(strict_types=1);
 
-    use STDW\Contract\App;
+    use STDW\Contract\AppAbstracted;
 
 
     if ( ! function_exists('app'))
     {
-        function app(): App
+        function app(): AppAbstracted
         {
-            return App::getInstance();
+            return AppAbstracted::getInstance();
         }
     }

@@ -3,7 +3,7 @@
     namespace STDW\Contract;
 
 
-    interface AppInterface extends MacroableInterface, RegisterableInterface, BootableInterface, TerminableInterface
+    interface AppInterface extends RegisterableInterface, BootableInterface, TerminableInterface
     {
         public static function getInstance(): AppInterface;
 

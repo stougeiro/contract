@@ -28,7 +28,7 @@
             }
 
 
-            $path = explode('.', $path);
+            $segments = explode('.', $path);
             $filename = 'env';
             $extension = '.php';
 
@@ -45,7 +45,7 @@
 
             $item = $items;
 
-            foreach ($path as $segment) {
+            foreach ($segments as $segment) {
                 $item = &$item[$segment];
 
                 if ( ! isset($item)) {
@@ -65,8 +65,8 @@
         {
             static $items = [];
 
-            $path = explode('.', $path);
-            $filename = $path[0];
+            $segments = explode('.', $path);
+            $filename = $segments[0];
             $extension = '.php';
 
             if (isset($items[$filename])) {
@@ -87,7 +87,7 @@
 
             $item = $items;
 
-            foreach ($path as $segment) {
+            foreach ($segments as $segment) {
                 $item = &$item[$segment];
 
                 if ( ! isset($item)) {

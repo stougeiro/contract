@@ -23,14 +23,14 @@
         {
             static $items = [];
 
+            $segments = explode('.', $path);
+            $filename = 'env';
+            $extension = '.php';
+
             if ( ! empty($items)) {
                 goto item;
             }
 
-
-            $segments = explode('.', $path);
-            $filename = 'env';
-            $extension = '.php';
 
             $file = ROOT . $filename.$extension;
 

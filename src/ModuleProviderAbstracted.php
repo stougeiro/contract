@@ -14,5 +14,7 @@
         }
 
 
+        abstract public function register(): void;
+
         abstract public function configure(): void;
     }

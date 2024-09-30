@@ -3,7 +3,7 @@
     namespace STDW\Contract;
 
 
-    interface ModuleProviderInterface
+    interface ModuleProviderInterface extends RegisterableInterface
     {
         public function configure(): void;
     }
